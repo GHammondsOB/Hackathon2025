@@ -1,24 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Banana Chat Application
+
+A modern, animated chat application built with Next.js, Material UI, and Tailwind CSS. Features a banana-themed interface with smooth animations and a clean, light-themed design.
+
+## Features
+
+- Modern chat interface with a banana-themed logo
+- Animated entrance effects for all elements
+- Responsive design that works on both desktop and mobile
+- Light theme with a clean, minimal aesthetic
+- Material UI components for a polished look
+- Smooth animations using Framer Motion
+
+## Prerequisites
+
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+- A modern web browser (Chrome, Firefox, Safari, or Edge)
 
 ## Getting Started
 
-First, run the development server:
-
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [repository-url]
+cd chat-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
+
+## Project Structure
+
+```
+chat-app/
+├── src/
+│   ├── app/
+│   │   ├── globals.css    # Global styles and fonts
+│   │   └── page.tsx       # Main application page
+│   └── components/
+│       ├── AnimatedHeader.tsx  # Header with banana logo and title
+│       ├── Chat.tsx           # Chat interface component
+│       └── ChatInterface.tsx   # Main page component
+├── public/
+│   └── banana.svg     # Banana logo
+└── package.json       # Project dependencies
+```
+
+## Technologies Used
+
+- Next.js 14
+- React
+- Material UI
+- Tailwind CSS
+- Framer Motion
+- TypeScript
+
+## Development
+
+The application is set up with TypeScript for type safety and Next.js for server-side rendering capabilities. The UI is built using Material UI components with custom styling through Tailwind CSS. Animations are handled by Framer Motion.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Learn More
 
