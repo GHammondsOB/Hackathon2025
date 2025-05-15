@@ -20,7 +20,26 @@
 }
 
 body {
-  background: var(--background);
+  background: #ffffff; /* Pure white background */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  /* content: ""; */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-image: url('/monkey.svg'); */
+  /* background-size: 100px; */
+  /* background-position: 0 0, 50px 50px; */
+  /* background-repeat: repeat; */
+  /* opacity: 0.1; */
+  /* pointer-events: none; */
+  /* z-index: 0; */
+  /* transform: translateZ(0); */
 }

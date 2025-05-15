@@ -24,7 +24,7 @@ export default function Chat() {
   };
 
   return (
-    <div className="w-[90%] max-w-[800px] h-[calc(100vh-200px)] flex flex-col gap-2 p-3 rounded-lg bg-white shadow-sm">
+    <div className="w-[90%] max-w-[800px] h-[calc(100vh-200px)] flex flex-col gap-2 p-6 rounded-xl bg-white/95 backdrop-blur-sm shadow-lg border border-gray-100">
       <div className="flex-1 overflow-y-auto flex flex-col-reverse gap-2">
         {messagesList.map((message) => (
           <motion.div
@@ -34,12 +34,8 @@ export default function Chat() {
             transition={{ duration: 0.3 }}
             className={`w-fit max-w-[80%] self-${message.isUser ? 'end' : 'start'}`}
           >
-            <div className={`p-2 rounded-lg ${message.isUser ? 'bg-blue-100' : 'bg-white'} shadow-sm`}
-              style={{
-                borderColor: message.isUser ? 'rgb(0 123 255 / 0.5)' : 'rgb(229 231 235 / 0.5)'
-              }}
-            >
-              <p className="text-gray-800">{message.content}</p>
+            <div className={`p-3 rounded-xl ${message.isUser ? 'bg-blue-500 text-white' : 'bg-gray-50'} shadow-sm border ${message.isUser ? 'border-blue-400' : 'border-gray-100'}`}>
+              <p className={message.isUser ? 'text-white' : 'text-gray-800'}>{message.content}</p>
             </div>
           </motion.div>
         ))}
